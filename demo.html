@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DatePicker with Ripple Effect</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <!--<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">-->
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<style type="text/css">
+			.container {
+				width: 100%;
+				max-width: 700px;
+				margin: auto;
+				padding: 10px 20px;
+				text-align: left;
+			}
+			.center {
+				text-align: center;
+			}
+			input {
+				display: inline-block;
+			}
+			.form-group {
+				display: block;
+				margin: 50px auto ;
+			}
+			.text-muted {
+				color: #999;
+				font-size: 13px;
+			}
+			code {
+			    font-family: courier;
+			    background: #404040;
+			    color: #ffffff;
+			    display: block;
+			    padding: 10px 20px;
+			    border-radius: 6px;
+			}
+		</style>
+    </head>
+    <body>
+
+    <div class="container">
+    	
+	    <h4 class="center">Simple standalone JS Datepicker with Ripple Effect.</h4>
+
+	    <div class="form-group">
+	    	<label>Date : </label>
+			<input type="text" id="input1">
+	    </div>
+
+	    <div class="form-group">
+	    	<label>Date : </label>
+			<input type="text" id="input">
+			<p class="text-muted">2 digit date</p>
+	    </div>
+
+	    <div class="form-group">
+			<p class="description">
+				Just link to the script file, instantiate the datepicker and
+				<br>Voila...
+			</p>
+			<code>
+				&lt;script src=&quot;js/datepicker.js&quot;>&lt;/script&gt;
+				<br>
+		        &lt;script&gt;
+				<br>
+				&nbsp;&nbsp;new DatePicker( &quot;input#input&quot;, { twoDigitDate: true } ) ;
+				<br>
+				&nbsp;&nbsp;new DatePicker( &quot;input#input1&quot; ) ;
+				<br>
+		        &lt;/script&gt;
+				<br>
+			</code>
+
+
+	    </div>
+
+    </div>
+
+
+		<script src="js/datepicker.js"></script>
+        <script>
+			  // readTextFile("datepicker.html");
+			new DatePicker( 'input#input', { twoDigitDate: true } ) ;
+			new DatePicker( 'input#input1' ) ;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    height: 500px;
+    position: relative;
+}
+.datepicker {
+    display: block;
+    position: absolute;
+    width: 250px;
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.59);
+    border-width: 0;
+    border-radius: 3px;
+    z-index: 999999999999;
+    background-color: #fff;
+    padding: 0;
+}
+
+.datepicker table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.datepicker table tr th,
+.datepicker table tr td {
+    cursor: pointer;
+    font-family: montserrat, roboto;
+    font-weight: 300;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-collapse: collapse;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+}
+
+.datepicker table tr th p,
+.datepicker table tr td p {
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 120px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*.datepicker table tr th:hover p,*/
+/*.datepicker table tr td:hover p,*/
+/*.datepicker .switch-datepicker:hover,*/
+.datepicker table tr td.active p
+{
+    background: #efefef;
+    vertical-align: middle;
+}
+
+.datepicker table tr td.previous,
+.datepicker table tr td.next {
+    color: #bcb8b8;
+}
+
+.datepicker th.week-day {
+    padding: 10px 0;
+    width: 35.71px;
+}
+.datepicker-years span.year,
+.datepicker-months span.month {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 120px;
+}
+/*.datepicker-years tr td:hover span.year,*/
+/*.datepicker-months tr td:hover span.month,*/
+.datepicker-months tr td.active span.month,
+.datepicker-years tr td.active span.year {
+    background: #efefef;
+}
+
+.datepicker table tr th.next,
+.datepicker table tr th.prev {
+    width: 32.8px;
+    padding: 10px 0;
+}
+
+.datepicker table tr th.prev p,
+.datepicker table tr th.next p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 4px 0 7px 0;
+}
+
+.datepicker .datepicker-nav th {
+    border-bottom: none;
+}
+
+.datepicker>.datepicker-days,
+.datepicker>.datepicker-months,
+.datepicker>.datepicker-years {
+    display: none;
+}
+.datepicker>.active {
+    display: block;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+    position: relative;
+    overflow: hidden;
+}
+
+.datepicker-months table tr td,
+.datepicker-months table tr th,
+.datepicker-years table tr td,
+.datepicker-years table tr th {
+    padding: 10px 0;
+}
+
+.datepicker table tfoot tr th {
+    padding: 10px 0;
+}
+
+
+
+span.touch-effect {
+    transform: scale(0);
+    display: block;
+    position: absolute;
+    width: 10px;
+    opacity: 1;
+    height: 10px;
+    border-radius: 100% ;
+    margin: auto;
+    background: rgba(228, 228, 228, 0.6);
+    transition: all .2s ease-in-out, opacity 1s ease-in-out ;
+}
+.touching span.touch-effect {
+    transform: scale(100);
+}
+.fade-out.touching span.touch-effect {
+    opacity: 0;
+}
