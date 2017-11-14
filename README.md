@@ -1,6 +1,6 @@
 # Datepicker
 Simple standalone js datepicker with ripple effect.
-Demo is available on demos.arsaland.com/datepicker.
+Demo is available on https://arsi-d.github.io/Datepicker/demo.html.
 
 Contributions will be appreciated, even in documentation.
 
